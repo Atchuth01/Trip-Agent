@@ -39,7 +39,11 @@ never fails mid-take due to a flaky third-party API or rate limit.
 cd travel_agent
 pip install -r requirements.txt
 cp .env.example .env   # then fill in your keys
-export $(cat .env | xargs)   # or use python-dotenv / your shell's method
+Get-Content .env | ForEach-Object {
+    if ($_ -match '^([^#=]+)=(.*)$') {
+        [System.Environment]::SetEnvironmentVariable($matches[1], $matches[2])
+    }
+}   # or use python-dotenv / your shell's method
 ```
 
 **Required:** `GROQ_API_KEY` — completely free, no credit card. Get one at
