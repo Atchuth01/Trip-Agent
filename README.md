@@ -7,6 +7,11 @@ which tools to call (flight search → hotel search → budget calculator), and
 returns a structured itinerary — not a classifier, not a static form, an
 actual multi-step tool-using agent.
 
+Project Working video:
+
+Demo Video: https://drive.google.com/file/d/1CcUtdvP2YkyguWjc18_wFGiogtC4sbJ6/view?usp=sharing
+
+
 ## How it works
 
 ```
