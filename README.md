@@ -1,6 +1,6 @@
 # TripAgent — Autonomous Travel Planning Agent
 
-Built for the Tabhi / Mondee Agentic AI Intern application.
+
 
 An agent that takes a natural-language travel request, autonomously decides
 which tools to call (flight search → hotel search → budget calculator), and
