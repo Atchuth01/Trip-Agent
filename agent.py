@@ -1,4 +1,9 @@
 import os
+from dotenv import load_dotenv
+
+# Load local secrets before importing modules that read environment variables.
+load_dotenv()
+
 import json
 import re
 from datetime import datetime
